@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% include 'header.html' %}
+    </head>
+    <body>
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('https://images.unsplash.com/photo-1708724195876-1156245fce21?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
+            <div class="overlay"></div>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                  <div class="post-heading">
+                    <h1>{{the_post.title}}</h1>
+                    <h2 class="subheading">{{the_post.subtitle}}</h2>
+                    <span class="meta">Posted by
+                      <a href="#">Lewis Onodje</a>
+                      on {{day}}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </header>
+
+          <!-- Post Content -->
+          <article>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                  <p>
+                    {{the_post.body}}
+                  </p>
+                  </div>
+              </div>
+            </div>
+          </article>
+
+          <hr>
+        {% include "footer.html" %}
+    </body>
+</html>
